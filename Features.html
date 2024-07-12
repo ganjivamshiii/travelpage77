@@ -1,37 +1,133 @@
-<section id="features">
-    <h2>Our Features</h2>
-    <div class="feature-item">
-        <h3>Feature 1: Comprehensive Travel Guides</h3>
-        <p>We provide detailed travel guides for various destinations, including top attractions, best places to stay, and local cuisine.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Feature 2: Personalized Itineraries</h3>
-        <p>Create personalized itineraries based on your preferences and travel style. Our tools help you plan the perfect trip.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Feature 3: User Reviews and Ratings</h3>
-        <p>Read reviews and ratings from fellow travelers to make informed decisions about your travel plans.</p>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Website</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to the Travel Website</h1>
+        <p>Your gateway to the world.</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpK09RSd3RfF6VK_n80z2LfPCPiTf01t-gTQ&s" alt="Destination">
+                <h3>By Roadways</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium est, dignissimos doloribus odio delectus esse minima quae asperiores assumenda sit id quasi sint ullam iusto sapiente et dolorum! Error, ab.</p>
+            </div>
+            <div class="card">
+                <img src="https://www.financialexpress.com/wp-content/uploads/2024/03/JettWings-Airways-e1709701150925.jpg" alt="Destination">
+                <h3>Air ways</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam sint, quaerat nulla distinctio, harum asperiores itaque modi aliquam explicabo aspernatur quasi aliquid culpa voluptatem! Distinctio maxime dolor pariatur numquam veritatis?</p>
+            </div>
+            <div class="card">
+                <image src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilZ0ea9oLWdw/v0/-1x-1.jpg" alt="">
+                    <h3>sea way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus distinctio accusantium magnam deleniti, sequi iure nostrum possimus doloremque perferendis at pariatur veritatis, unde fugit ratione minima, tenetur est mollitia?</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+        <a href=" ">tavelpage</a>
+    </footer>
+</body>
+</html>
 <style>
-.features {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/2161920/pexels-photo-2161920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+section {
     padding: 20px;
-    background-color: #f4f4f4;
+    text-align: center;
 }
 
-.features h2 {
-    color: #333;
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.feature-item {
-    margin-bottom: 20px;
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.feature-item h3 {
-    color: #007BFF;
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.feature-item p {
-    color: #555;
+.card h3 {
+    margin: 0;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.card p {
+    padding: 0 10px 10px 10px;
+    color:whitesmoke;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 </style>
